@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
+
+/***** Variable CSS ***********/
+:root {
+    --header-height: 3rem;
+
+    /*====== colors *===*/
+    --title-color: rgb(13, 10, 10);
+    --text-color: rgb(64, 58, 58);
+    --text-color-light: rgb(112, 112, 112);
+    --container-color: rgb(250, 250, 250);
+    --container-color-alt: rgb(240, 239, 239);
+    --body-color: rgb(252, 252, 252);
+
+}
