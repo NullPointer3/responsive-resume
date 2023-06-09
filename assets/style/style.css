@@ -12,4 +12,89 @@
     --container-color-alt: rgb(240, 239, 239);
     --body-color: rgb(252, 252, 252);
 
+    /*========== Font and typography ========*/
+    --body-font: 'Poppins', sans-serif ;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+
+    /*======== Font Weight ==========*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+
+    /*======== Margines ===========*/
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-1-75: 1.75rem;
+    --mb-2: 2rem;
+    --mb-2-25: 2.25rem;
+    --mb-2-5: 2.5rem;
+    --mb-2-75: 2.75rem;
+    --mb-3: 3rem;
+
+    /*======= z-index ======*/
+    --ztooltip: 10;
+    --z-fixed: 100;
+}
+
+/*================= Base ============*/
+*, ::before, ::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 0 3rem 0;
+    padding: 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+}
+
+h1,h2,h3,ul,p {
+    margin: 0;
+}
+
+h1,h2,h3 {
+    color: var(--title-color);
+    font-weight: var(--font-medium);
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*============= Class CSS =============*/
+.section{
+    padding: 1.5rem 0;
+}
+
+.section__title {
+    font-size: var(--h2-font-size);
+    color: var(--title-color);
+    font-weight: var(--font-semi-bold);
+    text-transform: uppercase;
+    letter-spacing: .35rem;
+    text-align: center;
+    margin-bottom: var(--mb-3);
 }
