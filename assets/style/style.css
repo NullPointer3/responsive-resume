@@ -119,7 +119,7 @@ img {
     left: 0;
     z-index: var(--z-fixed);
     background-color: var(--body-color);
-    box-shadow: 0 -1px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
 }
 
@@ -130,6 +130,9 @@ img {
     justify-content: space-between;
     align-items: center;
 }
+
+
+
 
 @media screen and (max-width: 968px){
     .nav__menu {
@@ -187,3 +190,70 @@ img {
 .show__menu {
     bottom: var(--header-height);
 }
+
+.active-link {
+    color: var(--title-color);
+}
+
+/*============= Home ==============*/
+.home {
+    position: relative;
+}
+
+.home__container {
+    gap: 3rem;
+}
+
+.home__data {
+    gap: .5rem;
+    text-align: center;
+}
+
+.home__image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: var(--mb-1);
+}
+
+.home__title {
+    font-size: var(--h1-font-size);
+}
+
+.home__profession {
+    font-size: var(--normal-font-size);
+    margin-bottom: var(--mb-1);
+}
+
+.home__address {
+    gap: 1rem;
+}
+
+.home__information {
+    display: flex;
+    align-items: center;
+    font-size: var(--small-font-size);
+}
+
+.home__icon {
+    font-size: 1.2rem;
+    margin-right: .25rem;
+}
+
+.home__btn-movil {
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    padding: 1rem 2rem;
+    color: var(--title-color);
+    border-radius: .25rem;
+    transition: .3s;
+    font-weight: var(--font-medium);
+    margin-top: var(--mb-3);
+}
+
+.home__btn-movil:hover {
+    background-color: var(--text-color);
+    color: var(--container-color);
+}
+
