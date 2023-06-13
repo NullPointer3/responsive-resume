@@ -339,8 +339,9 @@ img {
     font-size: var(--smaller-font-size);
 }
 
-/*======= Skills ==========*/
-.skills__content {
+/*======= Skills & languages ==========*/
+.skills__content,
+.languages__content {
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -348,13 +349,19 @@ img {
     gap: 0;
 }
 
-.skills__name{
+.languages__content {
+    gap: 0;
+}
+
+.skills__name,
+.languages__name{
     display: flex;
     align-items: center;
     margin-bottom: var(--mb-3);
 }
 
-.skills__circle {
+.skills__circle,
+.languages__circle {
     display: inline-block;
     width: 5px;
     height: 5px;
@@ -367,4 +374,65 @@ img {
 .certificate__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-1);
+}
+
+/*============ References ===========*/
+.references__content {
+    gap: .25rem;
+}
+
+.references__subtitle {
+    color: var(--text-color-light);
+}
+
+.references__subtitle,
+.references__contact {
+    font-size: var(--smaller-font-size);   
+}
+
+.references__title {
+    font-size: var(--h3-font-size);
+}
+
+/*============= Interests ==========*/
+.interests__container {
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: var(--mb-2);
+}
+
+.interests__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.interests__icon {
+    font-size: 1.5rem;
+    color: var(--text-color-light);
+    margin-bottom: .25rem;
+}
+/**========= Scroll Top =========*/
+.scroll__top {
+    position: fixed;
+    right: 1rem;
+    bottom: -20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .3rem;
+    background-color: var(--container-color-alt);
+    border-radius: .4rem;
+    z-index: var(--ztooltip);
+    transition: .4s;
+    visibility: hidden;
+}
+
+.scrollTop__icon {
+    font-size: 1.2rem;
+    color: var(--text-color);
+}
+
+.show-scroll {
+    visibility: visible;
+    bottom: 5rem;
 }

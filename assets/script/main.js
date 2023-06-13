@@ -43,3 +43,17 @@ function scrollActive() {
     })
 }
 window.addEventListener('scroll', scrollActive)
+
+
+/*=================== Show Scroll Top ================*/
+function scrollTop() {
+    const scrollTop = document.getElementById('scroll-top')
+    // when the scroll is higher than 200vh, add the show-scroll class
+    if(this.scrollY >= 350) {
+        scrollTop.classList.add('show-scroll')
+    }
+    else {
+        scrollTop.classList.remove('show-scroll')
+    }
+}
+window.addEventListener('scroll', scrollTop)
