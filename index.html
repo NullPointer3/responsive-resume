@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="assets/style/style.css">
     <title>Responsive Resume</title>
 </head>
-<body class="scale-cv">
+<body>
     <header class="l-header" id="header">
         <nav class="nav bd-container">
             <a href="#" class="nav__logo">Nuhu</a>
@@ -69,7 +69,8 @@
     </header>
 
     <main class="l-main bd-container">
-        <div class="resume">
+        <!--== All elements within this div, is generated in PDF====-->
+        <div class="resume" id="area-cv">
             <div class="resume__left">
                 <!--=========== Home ========-->
                 <section class="home" id="home">
@@ -134,9 +135,7 @@
                     <p class="profile__description">
                         Possess a strong ability to work independently as well as collaboratively
                         in fast-paced and challenging environments. Excellent organizational and 
-                        time management skills, ensuring projects are completed within deadlines
-                        and budget constraints. Strong attention to detail, ensuring accuracy and 
-                        precision in all tasks.
+                        time management skills.
                     </p>
                 </section>
 
@@ -236,21 +235,6 @@
                     <h2 class="section__title">Experience</h2>
 
                     <div class="experience__container bd-grid">
-                        <div class="experience__content">
-                            <div class="experience__time">
-                                <span class="experience__rounder"></span>
-                                <span class="experience__line"></span>
-                            </div>
-
-                            <div class="experience__data bd-grid">
-                                <h3 class="experience__title">Developer</h3>
-                                <span class="experience__company">2021 to 2022 | Developer</span>
-                                <p class="experience__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                    Quia veniam doloribus et rerum aliquam obcaecati deleniti nam, eaque dolore necessitatibus
-                                    sed ipsum placeat ullam qui veritatis molestias, dolorem mollitia non?</p>
-                            </div>
-                        </div>
-
                         <div class="experience__content">
                             <div class="experience__time">
                                 <span class="experience__rounder"></span>
@@ -378,6 +362,11 @@
     <a href="#" class="scroll__top" id="scroll-top">
         <i class="bx bx-up-arrow-alt scrollTop__icon"></i>
     </a>
+
+    <!--======== main js-->
     <script src="assets/script/main.js"></script>
+
+    <!--========= HTML2PDF ========-->
+    <script src="assets/script/html2pdf.bundle.min.js"></script>
 </body>
 </html>

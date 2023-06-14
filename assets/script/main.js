@@ -87,3 +87,43 @@ themeBtn.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*======= Reduce size and print on A4 sheet =====*/
+function scaleCv() {
+    document.body.classList.add('scale-cv')
+}
+
+/*=====  Remove scale ======*/
+function removeScale() {
+    document.body.classList.remove('scale-cv')
+}
+/*=========== PDF Generated area =========*/
+/*========= GENERATE PDF =====*/
+let areaCv = document.getElementById('area-cv')
+let resumeBtn = document.getElementById('resume-btn')
+
+// Html2pdf options 
+let opt = {
+    margin:       1,
+    filename:     'myResume.pdf',
+    image:        { type: 'jpeg', quality: 0.98 },
+    html2canvas:  { scale: 4 },
+    jsPDF:        { format: 'a4', orientation: 'portrait' },
+    pagebreak:    { mode: [ 'css']}
+  };
+  
+
+// Function to call areaCv and Html2Pdf options
+function generateResume(){
+    html2pdf(areaCv, opt)
+}
+resumeBtn.addEventListener('click', () => {
+    scaleCv()
+
+    // The pdf is generated
+    generateResume()
+
+    // Remove .scale-cv class from the body after 5 secs
+    setTimeout(removeScale, 5000)
+})
+
