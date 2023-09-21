@@ -109,7 +109,7 @@ let opt = {
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 4 },
     jsPDF:        { format: 'a4', orientation: 'portrait' },
-    pagebreak:    { mode: [ 'css']}
+    pagebreak:    { mode: [ 'avoid-all']}
   };
   
 
