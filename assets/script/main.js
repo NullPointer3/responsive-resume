@@ -104,7 +104,7 @@ let resumeBtn = document.getElementById('resume-btn')
 
 // Html2pdf options 
 let opt = {
-    margin:       1,
+    margin:       0,
     filename:     'myResume.pdf',
     image:        { type: 'jpeg', quality: 0.98 },
     html2canvas:  { scale: 4 },
